@@ -19,7 +19,7 @@ img {
 
 /* Typography */
 h1, h2, h3, h4 {
-    font-family: 'Sriracha', cursive;
+    font-family: 'DM Sans', cursive;
     line-height: 1.2;
 }
 
@@ -74,7 +74,7 @@ h3 {
     gap: 0.5rem;
     text-decoration: none;
     color: #3d2817;
-    font-family: 'Sriracha', cursive;
+    font-family: 'Times New Roman';
     font-size: 1.75rem;
 }
 
@@ -399,7 +399,7 @@ h3 {
 }
 
 .product-info .price {
-    font-family: 'Sriracha', cursive;
+    font-family: 'Times New Roman';
     font-size: 1.75rem;
     color: #e07856;
     margin-bottom: 1rem;
