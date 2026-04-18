@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - furever</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="heart-icon">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <span>furever</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="custom.html">Custom Design</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Shop Collection</h1>
+            <p>Oversized Gen Z tees with your favorite pets</p>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="dogs">Dogs</button>
+                <button class="filter-btn" data-category="cats">Cats</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <div class="product-card" data-category="dogs">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=600&h=600&fit=crop" alt="Golden Retriever Love">
+                    </div>
+                    <div class="product-info">
+                        <h3>Golden Retriever Love</h3>
+                        <p class="category">Dogs</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="1" 
+                            data-name="Golden Retriever Love" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cats">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&h=600&fit=crop" alt="Cat Minimal Line">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cat Minimal Line</h3>
+                        <p class="category">Cats</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="2" 
+                            data-name="Cat Minimal Line" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dogs">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?w=600&h=600&fit=crop" alt="Husky Dreams">
+                    </div>
+                    <div class="product-info">
+                        <h3>Husky Dreams</h3>
+                        <p class="category">Dogs</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="3" 
+                            data-name="Husky Dreams" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1568572933382-74d440642117?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cats">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=600&fit=crop" alt="Tabby Aesthetic">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tabby Aesthetic</h3>
+                        <p class="category">Cats</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="4" 
+                            data-name="Tabby Aesthetic" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dogs">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546975490-e8b92a360b24?w=600&h=600&fit=crop" alt="Corgi Vibes">
+                    </div>
+                    <div class="product-info">
+                        <h3>Corgi Vibes</h3>
+                        <p class="category">Dogs</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="5" 
+                            data-name="Corgi Vibes" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1546975490-e8b92a360b24?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cats">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=600&h=600&fit=crop" alt="Siamese Serenity">
+                    </div>
+                    <div class="product-info">
+                        <h3>Siamese Serenity</h3>
+                        <p class="category">Cats</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="6" 
+                            data-name="Siamese Serenity" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dogs">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=600&h=600&fit=crop" alt="Beagle Buddy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Beagle Buddy</h3>
+                        <p class="category">Dogs</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="7" 
+                            data-name="Beagle Buddy" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cats">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1615789591457-74a63395c990?w=600&h=600&fit=crop" alt="Orange Tabby Joy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Orange Tabby Joy</h3>
+                        <p class="category">Cats</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="8" 
+                            data-name="Orange Tabby Joy" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1615789591457-74a63395c990?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dogs">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1629053018348-8c4aa5e0ef3e?w=600&h=600&fit=crop" alt="Pomeranian Puff">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pomeranian Puff</h3>
+                        <p class="category">Dogs</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                            data-id="9" 
+                            data-name="Pomeranian Puff" 
+                            data-price="29.99" 
+                            data-image="https://images.unsplash.com/photo-1629053018348-8c4aa5e0ef3e?w=600&h=600&fit=crop">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Don't see your pet?</h2>
+            <p>Create a custom design with your own pet's photo!</p>
+            <a href="custom.html" class="btn btn-primary">Design Your Own</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span>furever</span>
+                    </div>
+                    <p>More than just clothing,<br>It's love you can wear</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="custom.html">Custom Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 furever. Made with love by college students for pet lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
