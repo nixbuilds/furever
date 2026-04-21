@@ -876,7 +876,7 @@ h3 {
 }
 
 .value-card {
-    background: white;
+    background: rgb(238, 159, 159);
     padding: 2rem;
     border-radius: 2rem;
     border: 1px solid rgba(224, 120, 86, 0.15);
@@ -1587,7 +1587,7 @@ h3 {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 1.5rem;
     }
 }
