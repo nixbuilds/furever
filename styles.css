@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 40px;
-    width: 90%;
-    font-size: 2rem;
 }
 section {
   padding: 40px 20px;
@@ -167,9 +164,9 @@ h3 {
 }
 
 .tagline {
-    font-size: 1.5rem;
-    color: #8b7355;
-    margin-bottom: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  line-height: 1.4;
 }
 
 .description {
@@ -1343,12 +1340,48 @@ h3 {
   h1 {
     font-size: 32px;
   }
-@media (max-width: 768px) {
+
+  h2 {
+    font-size: 24px;
+  }
+
   .nav-links {
     display: none;
   }
-}  
+
+  .hero-content,
+  .about-grid,
+  .cart-grid,
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .products-grid,
+  .features-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-buttons,
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .cart-item-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
+
     h2 {
         font-size:32px;
     }
